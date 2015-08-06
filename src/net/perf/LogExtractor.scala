@@ -1,3 +1,4 @@
+package net.perf
 
 import java.io.File
 import org.eclipse.jgit.api.Git
@@ -5,7 +6,7 @@ import org.eclipse.jgit.lib.Constants
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder
 import org.joda.time.Interval
 import scala.collection.JavaConversions._
-import scala.util.{Success, Failure, Try}
+import scala.util.{Failure, Success, Try}
 
 class LogExtractor(homePathStr: String, branch: String = Constants.HEAD) {
 
